@@ -5,7 +5,8 @@ WriteMakefile(
 	NAME          => 'Time::Piece::Range',
 	VERSION_FROM  => 'Range.pm', 
  	PREREQ_PM     => {
-		Date::Range => '1.0',
+		Time::Piece => '1.08',
+		Date::Range => '1.2',
 	},
 	($] >= 5.005 ?    ## Add these new keywords supported since 5.005
 		(ABSTRACT_FROM => 'Range.pm', # retrieve abstract from module
