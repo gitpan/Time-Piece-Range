@@ -35,7 +35,7 @@ all calculations.
 
 use strict;
 use vars qw/$VERSION/;
-$VERSION = '1.0';
+$VERSION = '1.1';
 
 use base 'Date::Range';
 
@@ -50,13 +50,17 @@ sub _day_length { ONE_DAY }
 
 =head1 AUTHOR
 
-Tony Bowden, E<lt>cpan@tmtm.comE<gt>, based heavily on
-Martin Fowler's "Analysis Patterns 2" discussion and code at
-http://www.martinfowler.com/ap2/range.html
+Tony Bowden, based heavily on Martin Fowler's "Analysis Patterns 2"
+discussion and code at http://www.martinfowler.com/ap2/range.html
+
+=head1 BUGS and QUERIES
+
+Please direct all correspondence regarding this module to:
+  bug-Time-Piece-Range@rt.cpan.org
 
 =head1 COPYRIGHT
 
-Copyright (C) 2003 Tony Bowden. All rights reserved.
+Copyright (C) 2003-0024 Tony Bowden. All rights reserved.
 
 This module is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

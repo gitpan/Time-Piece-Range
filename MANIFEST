@@ -1,5 +1,7 @@
 Changes
 MANIFEST
 Makefile.PL
-Range.pm
-test.pl
+lib/Time/Piece/Range.pm
+t/01.t
+META.yml                                 Module meta-data (added by MakeMaker)
+README
