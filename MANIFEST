@@ -1,7 +1,9 @@
 Changes
-MANIFEST
-Makefile.PL
 lib/Time/Piece/Range.pm
-t/01.t
-META.yml                                 Module meta-data (added by MakeMaker)
+Makefile.PL
+MANIFEST
+META.yml			Module meta-data (added by MakeMaker)
 README
+t/01.t
+t/pod-coverage.t
+t/pod.t

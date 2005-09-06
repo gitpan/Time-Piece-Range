@@ -23,6 +23,10 @@ Time::Piece::Range - deal with a range of Time::Piece objects
 
 	foreach my $date ($range->dates) { ... }
 
+	my $range3 = $range->gap($range2);
+
+	if ($range->abuts($range2)) { ... }
+
 =head1 DESCRIPTION
 
 This is a subclass of Date::Range that uses Time::Piece objects rather
@@ -33,9 +37,9 @@ all calculations.
 
 =cut
 
+$VERSION = '1.2';
+
 use strict;
-use vars qw/$VERSION/;
-$VERSION = '1.1';
 
 use base 'Date::Range';
 
@@ -50,19 +54,22 @@ sub _day_length { ONE_DAY }
 
 =head1 AUTHOR
 
-Tony Bowden, based heavily on Martin Fowler's "Analysis Patterns 2"
-discussion and code at http://www.martinfowler.com/ap2/range.html
+Tony Bowden
 
 =head1 BUGS and QUERIES
 
 Please direct all correspondence regarding this module to:
   bug-Time-Piece-Range@rt.cpan.org
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2003-0024 Tony Bowden. All rights reserved.
+  Copyright (C) 2003-2005 Tony Bowden.
 
-This module is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+  This program is free software; you can redistribute it and/or modify it under
+  the terms of the GNU General Public License; either version 2 of the License,
+  or (at your option) any later version.
 
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.
 
